@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let nrOfImages = 4;
   
     function fetchImages() {
+
         const apiUrl = "https://source.unsplash.com/367x200/?random&quality=high";
   
       imageGrid.innerHTML = "";
@@ -15,11 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const imageContainer = document.createElement("div");
         imageContainer.classList.add("image-container");
   
-        const randomParam = Math.floor(Math.random() * 1000);
+        const randomNumber = Math.floor(Math.random() * 1000);
   
         const image = document.createElement("img");
         image.classList.add("image");
-        image.src = `${apiUrl}${randomParam}`;
+        image.src = `${apiUrl}${randomNumber}`;
         image.alt = `Image ${i}`;
   
         const overlay = document.createElement("div");
