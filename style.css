@@ -1,11 +1,11 @@
 body {
-  font-size: 102%;
+  font-size: 122%;
   font-family: 'Times New Roman', Times, serif;
   
 }
 
 h1 {
-  margin-left: 235px;
+  margin-left: 380px;
 }
 
 .switch {
@@ -72,7 +72,7 @@ input:checked + .slider:before {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin-left: 235px;
+  margin-left: 380px;
 }
 
 .button1 {
@@ -80,17 +80,18 @@ input:checked + .slider:before {
   border: none;
   color: white;
   padding: 10px;
-  margin-left: 435px;
+  margin-left: 386px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 16px;
   align-items: baseline;
+  margin-top: 15px;
+  text-decoration: none;
 }
 
 .button2 {
-  margin-left: 236px;
-  width: calc(58.4% - 20px);
+  margin-left: 381.5px;
+  width: calc(47% - 20px);
   background-color: #6b4ad5;
   border: none;
   color: white;
@@ -101,20 +102,16 @@ input:checked + .slider:before {
   font-size: 16px;
 }
 
-.image {
-  width: 100%;
+
+.image { 
   height: auto;
-  object-fit: cover;
   image-rendering: pixelated;
-}
+ }
 
 .image-container {
   position: relative;
-  flex: 0 0 calc(50% - 10px);
-  max-width: 367px;
-  overflow: hidden;
-  margin: 8px; 
-  
+   max-width: 367px;
+   flex: 0 0 calc(50% - 16px);
 }
 
 .overlay {
@@ -132,6 +129,7 @@ input:checked + .slider:before {
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
+  transform: translateY(-8%);
   
 }
 
@@ -142,19 +140,12 @@ input:checked + .slider:before {
 }
 
 .image-grid {
-  margin: 20px auto;
+  margin: 16px 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 16px;
 }
-
-.image-container {
-  flex: 0 0 calc(50% - 10px);
-}
-
-
-
 
 
 
