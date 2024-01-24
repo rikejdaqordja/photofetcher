@@ -1,3 +1,5 @@
+
+
 body {
   font-size: 122%;
   font-family: 'Times New Roman', Times, serif;
@@ -102,7 +104,10 @@ input:checked + .slider:before {
   font-size: 16px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 72290bc83f5adde8db259af40d7c966009057292
 .image { 
   height: auto;
   image-rendering: pixelated;
@@ -129,7 +134,11 @@ input:checked + .slider:before {
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
+<<<<<<< HEAD
   transform: translateY(-8%);
+=======
+  transform: translateY(-6%);
+>>>>>>> 72290bc83f5adde8db259af40d7c966009057292
   
 }
 
@@ -147,5 +156,19 @@ input:checked + .slider:before {
   gap: 16px;
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 72290bc83f5adde8db259af40d7c966009057292
 
 

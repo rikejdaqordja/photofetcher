@@ -6,11 +6,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let nrOfImages = 4;
 
+<<<<<<< HEAD
   function fetchImages(append = false) {
     const apiUrl = "https://source.unsplash.com/367x200/?random&quality=high";
     if (!append) {
       imageGrid.innerHTML = "";
     }
+=======
+  function fetchImages() {
+
+      const apiUrl = "https://source.unsplash.com/367x200/?random&quality=high";
+
+    imageGrid.innerHTML = "";
+>>>>>>> 72290bc83f5adde8db259af40d7c966009057292
 
     for (let i = 1; i <= nrOfImages; i++) {
       const imageContainer = document.createElement("div");
@@ -20,7 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const image = document.createElement("img");
       image.classList.add("image");
+<<<<<<< HEAD
       image.src = `${apiUrl}&${randomParam}`;
+=======
+      image.src = `${apiUrl}${randomParam}`;
+>>>>>>> 72290bc83f5adde8db259af40d7c966009057292
       image.alt = `Image ${i}`;
 
       const overlay = document.createElement("div");
@@ -30,12 +42,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
       imageContainer.appendChild(image);
       imageContainer.appendChild(overlay);
+<<<<<<< HEAD
 
       if (!append) {
         imageGrid.appendChild(imageContainer);
       } else {
         imageGrid.appendChild(imageContainer);
       }
+=======
+      imageGrid.appendChild(imageContainer);
+>>>>>>> 72290bc83f5adde8db259af40d7c966009057292
     }
 
     if (grayscaleToggle.checked) {
@@ -57,7 +73,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function fetchMorePhotos() {
     nrOfImages += 4;
+<<<<<<< HEAD
     fetchImages(true);
+=======
+    fetchImages();
+>>>>>>> 72290bc83f5adde8db259af40d7c966009057292
   }
 
   fetchImages();
@@ -68,4 +88,8 @@ document.addEventListener("DOMContentLoaded", function () {
     fetchImages();
   });
   morePhotosButton.addEventListener("click", fetchMorePhotos);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 72290bc83f5adde8db259af40d7c966009057292
